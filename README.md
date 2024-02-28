@@ -30,7 +30,11 @@ Dans la console android
 
 # SAFARI
 
+https://github.com/jamesmortensen/WebKitWebDriver-Browser-Images
+
 > docker run --rm -it --shm-size=3g -p 7900:7900 -p 4444:4444 -p 5900:5900 -e ARCH='aarch64' jamesmortensen/webkitwebdriver-epiphany:latest
+
+http://127.0.0.1:7900/
 
 mdp : secret
 
