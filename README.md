@@ -8,7 +8,7 @@ Voir tous les containers
 
 Docker ps -a
 
-Aller dans la console Android
+Aller dans la console Android 
 
 > docker exec -it bf70e1d47424 bash
 
