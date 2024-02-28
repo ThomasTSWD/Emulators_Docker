@@ -1,4 +1,4 @@
-# Emu
+# Emu ANDROID
 
 ## Image
 
@@ -6,9 +6,9 @@ https://github.com/budtmo/docker-android
 
 ## Stopper arreter containers
 
-> docker stop $(docker ps -q)
+> docker stop $(docker ps -a -q)
 
-> docker rm $(docker ps -aq)
+> docker rm $(docker ps -a -q)
 
 ## Lancer image du cher butmo
 
@@ -28,7 +28,17 @@ Dans la console android
 
 > emulator -avd samsung_galaxy_s10_11.0
 
-## RAPPELS DOCKER
+# SAFARI
+
+> docker run --rm -it --shm-size=3g -p 7900:7900 -p 4444:4444 -p 5900:5900 -e ARCH='aarch64' jamesmortensen/webkitwebdriver-epiphany:latest
+
+mdp : secret
+
+Terminal dans noVnc > epiphany
+
+Enjoy !
+
+# RAPPELS DOCKER
 
 Voir tous les containers
 
